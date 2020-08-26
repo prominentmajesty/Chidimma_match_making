@@ -1,0 +1,72 @@
+{{#if success_msg}}
+  <div class="alert alert-success text-center mb-0 pt-1 pb-1" role="alert">{{success_msg}}</div>
+{{/if}}
+{{#if error_msg}}
+  <div class="alert alert-danger text-center mb-0" role="alert">{{error_msg}}</div>
+{{/if}}
+<nav class="navbar sticky-top navbar-expand-lg navbar-light" style="background-color: rgb(48, 48, 121)">
+  <div class="navbar-brand-div"><a class="navbar-brand" href="#" style="color: #fff;"><span><i class="fab fa-uniregistry"></i></span>r--ch</a></div>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <div class = "liDiv">
+        <li class="nav-item active">
+          <a class="nav-link" href="/" style="color: #fff;"><span class="fontAwsome"><i class="fas fa-home"></i></span><span class="textLabel">Home</span></a>
+        </li>
+      </div>
+      <div class="liDiv">
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: #fff;"><span class="fontAwsome"><i class="fas fa-info-circle"></i></span><span class="textLabel">About</a>
+        </li>
+      </div>
+      <div class="liDiv" id="hov">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" style="color: #fff;" id="navbarDropdown" role="button" data-toggle="dropdown">
+            <span class="fontAwsome"><i class="fas fa-align-center"></i></span><span class="textLabel">Menu</span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Contact Us</a>
+            <a class="dropdown-item" href="#">Connect To Us</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Meat Our Team</a>
+            <a class="dropdown-item" href="#">Our Mission</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Know About Our Promo</a>
+          </div>
+        </li>
+      </div>
+        <div class="liDiv">
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="color : #fff"><span class="fontAwsome"><i class="fab fa-accusoft"></i></span class="textLabel">Services</a>
+          </li>
+        </div>     
+      <div class="liDiv" id="hov">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" style="color: #fff;" id="navbarDropdown" role="button" data-toggle="dropdown">
+            <span class="fontAwsome"><i class="fas fa-suitcase-rolling"></i></span><span class="textLabel">More</span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">What We Do</a>
+            <a class="dropdown-item" href="#">News And/Feeds</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Our Vission</a>
+            <a class="dropdown-item" href="#">Testimonials</a>
+          </div>
+        </li>
+      </div>
+      {{#if user}}
+        <div class="liDiv">
+        </div>
+      {{else}}
+        <div class="liDiv">
+           <li class="nav-item">
+              <a class="nav-link" href="#" style="color : #fff" data-toggle="modal" data-target="#loginModal" id="login"><span class="fontAwsome"><i class="fas fa-sign-in-alt"></i></span class="textLabel">Login</a>
+          </li>
+        </div>
+      {{/if}}
+    </ul>
+  </div>
+</nav>

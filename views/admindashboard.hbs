@@ -1,0 +1,741 @@
+<!--https://colorlib.com/wp/free-bootstrap-admin-dashboard-templates/ NB This is the site that You will find free bootstrap-4-Admin dashboard template-->
+
+    <!--https://bootstrapmade.com  NB This is the site that You will find free bootstrap Home Page-->
+    <!--https://bootstrapmade.com/demo/Flexor/  NB This Is A site That will be used for Laundery Management Home Page--> 
+    <!--https://bootstrapmade.com/demo/eBusiness/ NB The Slider In This Site Is For School Portal Sites And The Slider Perspective Is The Reason Why This Theme Is Selected -->
+     
+    <!--<https://loading.io/spinner/> NB This is the site where You will get animated loading spiner
+    =========================================================
+    * ArchitectUI HTML Theme Dashboard - v1.0.0
+    =========================================================
+    * Product Page: https://dashboardpack.com
+    * Copyright 2019 DashboardPack (https://dashboardpack.com)
+    * Licensed under MIT (https://github.com/DashboardPack/architectui-html-theme-free/blob/master/LICENSE)
+    =========================================================
+    * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+    -->
+<div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
+    <div class="app-header header-shadow">
+        <div class="app-header__logo">
+            <div class="logo-src"></div>
+            <div class="header__pane ml-auto">
+                <div>
+                    <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+            </div> 
+        </div>
+        <div class="app-header__mobile-menu">
+            <div>
+                <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </div>
+        </div>
+        <div class="app-header__menu">
+            <span>
+                <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                    <span class="btn-icon-wrapper">
+                        <i class="fa fa-ellipsis-v fa-w-6"></i>
+                    </span>
+                </button>
+            </span>
+        </div>   
+        <div class="app-header__content">
+            <div class="app-header-left">
+                <div class="search-wrapper">
+                    <div class="input-holder">
+                        <input type="text" class="search-input" placeholder="Search for Video" id="search_text_input">
+                        <button class="search-icon" id="search_button"><span></span></button> <!--////////////////-->
+                        <div class="loadingio-spinner-spinner-l30frtags1l" id="spiner_icon"><div class="ldio-bcdqnk8e6d">
+                        <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+                        </div></div>
+                    </div>
+                    <button class="close"></button>
+                </div>
+                <ul class="header-menu nav">
+                    <li class="nav-item" id="matchUsers">
+                        <a href="javascript:void(0);" class="nav-link">
+                            <i class="fas fa-user-friends nav-link-icon"></i>
+                            match users
+                        </a>
+                    </li>
+                    <li class="btn-group nav-item" id="deleteUsers">
+                        <a href="javascript:void(0);" class="nav-link">
+                            <i class="fas fa-trash-alt nav-link-icon"></i>
+                            delete match
+                        </a>
+                    </li>
+                    <li class="dropdown nav-item" id="adminSettings">
+                        <a href="javascript:void(0);" class="nav-link">
+                            <i class="nav-link-icon fa fa-cog"></i>
+                            admin settings
+                        </a>
+                    </li>
+                </ul>        
+                </div>
+            <div class="app-header-right">
+                <div class="header-btn-lg pr-0">
+                    <div class="widget-content p-0">
+                        <div class="widget-content-wrapper">
+                            <div class="widget-content-left">
+                                <div class="btn-group">
+                                    <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
+                                        <img width="42" class="rounded-circle" src="/images/profile.jpg" alt="">
+                                        <i class="fa fa-angle-down ml-2 opacity-8"></i>
+                                    </a>
+                                    <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
+                                        {{#if admin}}
+                                            <div class ="guter">
+                                                <button type="button" tabindex="0" class="dropdown-item">Admin : {{admin.userName}}</button>
+                                                <div tabindex="-1" class="dropdown-divider"></div>
+                                                <a href="/admin/adminLogin"><button type="button" tabindex="0" class="dropdown-item logout">Logout</button></a>
+                                            </div>
+                                        {{/if}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>        
+            </div>
+        </div>
+    </div>       
+     <div class="ui-theme-settings" id="ui-theme-settings-formatter">
+        <button type="button" id="TooltipDemo" class="btn-open-options btn btn-warning">
+            <i class="fa fa-cog fa-w-16 fa-spin fa-2x"></i>
+        </button>
+        <div class="theme-settings__inner">
+            <div class="scrollbar-container">
+                <div class="theme-settings__options-wrapper">
+                    <h3 class="themeoptions-heading">Layout Options
+                    </h3>
+                    <div class="p-3">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <div class="widget-content p-0">
+                                    <div class="widget-content-wrapper">
+                                        <div class="widget-content-left mr-3">
+                                            <div class="switch has-switch switch-container-class" data-class="fixed-header">
+                                                <div class="switch-animate switch-on">
+                                                    <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="widget-content-left">
+                                            <div class="widget-heading">Fixed Header
+                                            </div>
+                                            <div class="widget-subheading">Makes the header top fixed, always visible!
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="widget-content p-0">
+                                    <div class="widget-content-wrapper">
+                                        <div class="widget-content-left mr-3">
+                                            <div class="switch has-switch switch-container-class" data-class="fixed-sidebar">
+                                                <div class="switch-animate switch-on">
+                                                    <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="widget-content-left">
+                                            <div class="widget-heading">Fixed Sidebar
+                                            </div>
+                                            <div class="widget-subheading">Makes the sidebar left fixed, always visible!
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="widget-content p-0">
+                                    <div class="widget-content-wrapper">
+                                        <div class="widget-content-left mr-3">
+                                            <div class="switch has-switch switch-container-class" data-class="fixed-footer">
+                                                <div class="switch-animate switch-off">
+                                                    <input type="checkbox" data-toggle="toggle" data-onstyle="success">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="widget-content-left">
+                                            <div class="widget-heading">Fixed Footer
+                                            </div>
+                                            <div class="widget-subheading">Makes the app footer bottom fixed, always visible!
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <h3 class="themeoptions-heading">
+                        <div>
+                            Header Options
+                        </div>
+                        <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-header-cs-class" data-class="">
+                            Restore Default
+                        </button>
+                    </h3>
+                    <div class="p-3">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <h5 class="pb-2">Choose Color Scheme
+                                </h5>
+                                <div class="theme-settings-swatches">
+                                    <div class="swatch-holder bg-primary switch-header-cs-class" data-class="bg-primary header-text-light">
+                                    </div>
+                                    <div class="swatch-holder bg-secondary switch-header-cs-class" data-class="bg-secondary header-text-light">
+                                    </div>
+                                    <div class="swatch-holder bg-success switch-header-cs-class" data-class="bg-success header-text-dark">
+                                    </div>
+                                    <div class="swatch-holder bg-info switch-header-cs-class" data-class="bg-info header-text-dark">
+                                    </div>
+                                    <div class="swatch-holder bg-warning switch-header-cs-class" data-class="bg-warning header-text-dark">
+                                    </div>
+                                    <div class="swatch-holder bg-danger switch-header-cs-class" data-class="bg-danger header-text-light">
+                                    </div>
+                                    <div class="swatch-holder bg-light switch-header-cs-class" data-class="bg-light header-text-dark">
+                                    </div>
+                                    <div class="swatch-holder bg-dark switch-header-cs-class" data-class="bg-dark header-text-light">
+                                    </div>
+                                    <div class="swatch-holder bg-focus switch-header-cs-class" data-class="bg-focus header-text-light">
+                                    </div>
+                                    <div class="swatch-holder bg-alternate switch-header-cs-class" data-class="bg-alternate header-text-light">
+                                    </div>
+                                    <div class="divider">
+                                    </div>
+                                    <div class="swatch-holder bg-vicious-stance switch-header-cs-class" data-class="bg-vicious-stance header-text-light">
+                                    </div>
+                                    <div class="swatch-holder bg-midnight-bloom switch-header-cs-class" data-class="bg-midnight-bloom header-text-light">
+                                    </div>
+                                    <div class="swatch-holder bg-night-sky switch-header-cs-class" data-class="bg-night-sky header-text-light">
+                                    </div>
+                                    <div class="swatch-holder bg-slick-carbon switch-header-cs-class" data-class="bg-slick-carbon header-text-light">
+                                    </div>
+                                    <div class="swatch-holder bg-asteroid switch-header-cs-class" data-class="bg-asteroid header-text-light">
+                                    </div>
+                                    <div class="swatch-holder bg-royal switch-header-cs-class" data-class="bg-royal header-text-light">
+                                    </div>
+                                    <div class="swatch-holder bg-warm-flame switch-header-cs-class" data-class="bg-warm-flame header-text-dark">
+                                    </div>
+                                    <div class="swatch-holder bg-night-fade switch-header-cs-class" data-class="bg-night-fade header-text-dark">
+                                    </div>
+                                    <div class="swatch-holder bg-sunny-morning switch-header-cs-class" data-class="bg-sunny-morning header-text-dark">
+                                    </div>
+                                    <div class="swatch-holder bg-tempting-azure switch-header-cs-class" data-class="bg-tempting-azure header-text-dark">
+                                    </div>
+                                    <div class="swatch-holder bg-amy-crisp switch-header-cs-class" data-class="bg-amy-crisp header-text-dark">
+                                    </div>
+                                    <div class="swatch-holder bg-heavy-rain switch-header-cs-class" data-class="bg-heavy-rain header-text-dark">
+                                    </div>
+                                    <div class="swatch-holder bg-mean-fruit switch-header-cs-class" data-class="bg-mean-fruit header-text-dark">
+                                    </div>
+                                    <div class="swatch-holder bg-malibu-beach switch-header-cs-class" data-class="bg-malibu-beach header-text-light">
+                                    </div>
+                                    <div class="swatch-holder bg-deep-blue switch-header-cs-class" data-class="bg-deep-blue header-text-dark">
+                                    </div>
+                                    <div class="swatch-holder bg-ripe-malin switch-header-cs-class" data-class="bg-ripe-malin header-text-light">
+                                    </div>
+                                    <div class="swatch-holder bg-arielle-smile switch-header-cs-class" data-class="bg-arielle-smile header-text-light">
+                                    </div>
+                                    <div class="swatch-holder bg-plum-plate switch-header-cs-class" data-class="bg-plum-plate header-text-light">
+                                    </div>
+                                    <div class="swatch-holder bg-happy-fisher switch-header-cs-class" data-class="bg-happy-fisher header-text-dark">
+                                    </div>
+                                    <div class="swatch-holder bg-happy-itmeo switch-header-cs-class" data-class="bg-happy-itmeo header-text-light">
+                                    </div>
+                                    <div class="swatch-holder bg-mixed-hopes switch-header-cs-class" data-class="bg-mixed-hopes header-text-light">
+                                    </div>
+                                    <div class="swatch-holder bg-strong-bliss switch-header-cs-class" data-class="bg-strong-bliss header-text-light">
+                                    </div>
+                                    <div class="swatch-holder bg-grow-early switch-header-cs-class" data-class="bg-grow-early header-text-light">
+                                    </div>
+                                    <div class="swatch-holder bg-love-kiss switch-header-cs-class" data-class="bg-love-kiss header-text-light">
+                                    </div>
+                                    <div class="swatch-holder bg-premium-dark switch-header-cs-class" data-class="bg-premium-dark header-text-light">
+                                    </div>
+                                    <div class="swatch-holder bg-happy-green switch-header-cs-class" data-class="bg-happy-green header-text-light">
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <h3 class="themeoptions-heading">
+                        <div>Sidebar Options</div>
+                        <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-sidebar-cs-class" data-class="">
+                            Restore Default
+                        </button>
+                    </h3>
+                    <div class="p-3">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <h5 class="pb-2">Choose Color Scheme
+                                </h5>
+                                <div class="theme-settings-swatches">
+                                    <div class="swatch-holder bg-primary switch-sidebar-cs-class" data-class="bg-primary sidebar-text-light">
+                                    </div>
+                                    <div class="swatch-holder bg-secondary switch-sidebar-cs-class" data-class="bg-secondary sidebar-text-light">
+                                    </div>
+                                    <div class="swatch-holder bg-success switch-sidebar-cs-class" data-class="bg-success sidebar-text-dark">
+                                    </div>
+                                    <div class="swatch-holder bg-info switch-sidebar-cs-class" data-class="bg-info sidebar-text-dark">
+                                    </div>
+                                    <div class="swatch-holder bg-warning switch-sidebar-cs-class" data-class="bg-warning sidebar-text-dark">
+                                    </div>
+                                    <div class="swatch-holder bg-danger switch-sidebar-cs-class" data-class="bg-danger sidebar-text-light">
+                                    </div>
+                                    <div class="swatch-holder bg-light switch-sidebar-cs-class" data-class="bg-light sidebar-text-dark">
+                                    </div>
+                                    <div class="swatch-holder bg-dark switch-sidebar-cs-class" data-class="bg-dark sidebar-text-light">
+                                    </div>
+                                    <div class="swatch-holder bg-focus switch-sidebar-cs-class" data-class="bg-focus sidebar-text-light">
+                                    </div>
+                                    <div class="swatch-holder bg-alternate switch-sidebar-cs-class" data-class="bg-alternate sidebar-text-light">
+                                    </div>
+                                    <div class="divider">
+                                    </div>
+                                    <div class="swatch-holder bg-vicious-stance switch-sidebar-cs-class" data-class="bg-vicious-stance sidebar-text-light">
+                                    </div>
+                                    <div class="swatch-holder bg-midnight-bloom switch-sidebar-cs-class" data-class="bg-midnight-bloom sidebar-text-light">
+                                    </div>
+                                    <div class="swatch-holder bg-night-sky switch-sidebar-cs-class" data-class="bg-night-sky sidebar-text-light">
+                                    </div>
+                                    <div class="swatch-holder bg-slick-carbon switch-sidebar-cs-class" data-class="bg-slick-carbon sidebar-text-light">
+                                    </div>
+                                    <div class="swatch-holder bg-asteroid switch-sidebar-cs-class" data-class="bg-asteroid sidebar-text-light">
+                                    </div>
+                                    <div class="swatch-holder bg-royal switch-sidebar-cs-class" data-class="bg-royal sidebar-text-light">
+                                    </div>
+                                    <div class="swatch-holder bg-warm-flame switch-sidebar-cs-class" data-class="bg-warm-flame sidebar-text-dark">
+                                    </div>
+                                    <div class="swatch-holder bg-night-fade switch-sidebar-cs-class" data-class="bg-night-fade sidebar-text-dark">
+                                    </div>
+                                    <div class="swatch-holder bg-sunny-morning switch-sidebar-cs-class" data-class="bg-sunny-morning sidebar-text-dark">
+                                    </div>
+                                    <div class="swatch-holder bg-tempting-azure switch-sidebar-cs-class" data-class="bg-tempting-azure sidebar-text-dark">
+                                    </div>
+                                    <div class="swatch-holder bg-amy-crisp switch-sidebar-cs-class" data-class="bg-amy-crisp sidebar-text-dark">
+                                    </div>
+                                    <div class="swatch-holder bg-heavy-rain switch-sidebar-cs-class" data-class="bg-heavy-rain sidebar-text-dark">
+                                    </div>
+                                    <div class="swatch-holder bg-mean-fruit switch-sidebar-cs-class" data-class="bg-mean-fruit sidebar-text-dark">
+                                    </div>
+                                    <div class="swatch-holder bg-malibu-beach switch-sidebar-cs-class" data-class="bg-malibu-beach sidebar-text-light">
+                                    </div>
+                                    <div class="swatch-holder bg-deep-blue switch-sidebar-cs-class" data-class="bg-deep-blue sidebar-text-dark">
+                                    </div>
+                                    <div class="swatch-holder bg-ripe-malin switch-sidebar-cs-class" data-class="bg-ripe-malin sidebar-text-light">
+                                    </div>
+                                    <div class="swatch-holder bg-arielle-smile switch-sidebar-cs-class" data-class="bg-arielle-smile sidebar-text-light">
+                                    </div>
+                                    <div class="swatch-holder bg-plum-plate switch-sidebar-cs-class" data-class="bg-plum-plate sidebar-text-light">
+                                    </div>
+                                    <div class="swatch-holder bg-happy-fisher switch-sidebar-cs-class" data-class="bg-happy-fisher sidebar-text-dark">
+                                    </div>
+                                    <div class="swatch-holder bg-happy-itmeo switch-sidebar-cs-class" data-class="bg-happy-itmeo sidebar-text-light">
+                                    </div>
+                                    <div class="swatch-holder bg-mixed-hopes switch-sidebar-cs-class" data-class="bg-mixed-hopes sidebar-text-light">
+                                    </div>
+                                    <div class="swatch-holder bg-strong-bliss switch-sidebar-cs-class" data-class="bg-strong-bliss sidebar-text-light">
+                                    </div>
+                                    <div class="swatch-holder bg-grow-early switch-sidebar-cs-class" data-class="bg-grow-early sidebar-text-light">
+                                    </div>
+                                    <div class="swatch-holder bg-love-kiss switch-sidebar-cs-class" data-class="bg-love-kiss sidebar-text-light">
+                                    </div>
+                                    <div class="swatch-holder bg-premium-dark switch-sidebar-cs-class" data-class="bg-premium-dark sidebar-text-light">
+                                    </div>
+                                    <div class="swatch-holder bg-happy-green switch-sidebar-cs-class" data-class="bg-happy-green sidebar-text-light">
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <h3 class="themeoptions-heading">
+                        <div>Main Content Options</div>
+                        <button type="button" class="btn-pill btn-shadow btn-wide ml-auto active btn btn-focus btn-sm">Restore Default
+                        </button>
+                    </h3>
+                    <div class="p-3">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <h5 class="pb-2">Page Section Tabs
+                                </h5>
+                                <div class="theme-settings-swatches">
+                                    <div role="group" class="mt-2 btn-group">
+                                        <button type="button" class="btn-wide btn-shadow btn-primary btn btn-secondary switch-theme-class" data-class="body-tabs-line">
+                                            Line
+                                        </button>
+                                        <button type="button" class="btn-wide btn-shadow btn-primary active btn btn-secondary switch-theme-class" data-class="body-tabs-shadow">
+                                            Shadow
+                                        </button>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>        
+    <div class="app-main">
+            <div class="app-sidebar sidebar-shadow">
+                <div class="app-header__logo">
+                    <div class="logo-src"></div>
+                    <div class="header__pane ml-auto">
+                        <div>
+                            <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="app-header__mobile-menu">
+                    <div>
+                        <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="app-header__menu">
+                    <span>
+                        <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                            <span class="btn-icon-wrapper">
+                                <i class="fa fa-ellipsis-v fa-w-6"></i>
+                            </span>
+                        </button>
+                    </span>
+                </div>    <div class="scrollbar-sidebar">
+                    <div class="app-sidebar__inner">
+                        <ul class="vertical-nav-menu">
+                            <li class="app-sidebar__heading"></li>
+                            <li>
+                                <a href="#" class="mm-active">
+                                    <i class="material-icons metismenu-icon">dashboard</i>
+                                    Dashboard
+                                </a>
+                            </li>
+                            <li class="app-sidebar__heading">Admin Components</li>
+                            <li>
+                                <a href="#">
+                                    <i class="material-icons metismenu-icon">queue_play_next</i>
+                                    Elements
+                                    <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                                </a>
+                                <ul class="normal">
+                                    <li class="loadPdf" id="loadPdf"> 
+                                        <i class="fas fa-file-pdf" id="format-font"></i>
+                                        <h7 class="formatLabel">upload pdf</h7>
+                                    </li>
+                                   <li class="loadVideo" id="loadVideo"> 
+                                        <i class="material-icons" id="format-font">local_movies</i>
+                                        <h7 class="formatLabel">upload video</h7>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="material-icons metismenu-icon">dynamic_feed</i>
+                                    Components
+                                    <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                                </a>
+                               <ul class="normal">
+                                    <li class="openPdf" id="openPdf"> 
+                                        <i class="material-icons" id="format-font">picture_as_pdf</i>
+                                        <h7 class="formatLabel">open pdf</h7>
+                                    </li>
+                                   <li class="openVideo" id="openVideo"> 
+                                        <i class="material-icons" id="format-font">video_library</i>
+                                        <h7 class="formatLabel">open video</h7>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="viewUser" id="viewUser">
+                                <a href="#">
+                                    <i class="material-icons metismenu-icon">accessibility_new</i>
+                                    view matched users
+                                </a>
+                            </li>
+                            <li class="app-sidebar__heading">Widgets</li>
+                            <li>
+                                <a href="#">
+                                    <i class="material-icons metismenu-icon">nfc</i>
+                                Admin Boxes
+                                </a>
+                            </li>
+                            <li class="app-sidebar__heading">addons</li>
+                            <li>
+                                <a href="#">
+                                    <i class="material-icons metismenu-icon">post_add</i>
+                                    add control
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="material-icons metismenu-icon">filter_9_plus</i>filter+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="material-icons metismenu-icon">flip_camera_android</i>
+                                    Coverages
+                                </a>
+                            </li>
+                            <li class="app-sidebar__heading">Devices</li>
+                            <li>
+                                <a href="#">
+                                    <i class="material-icons metismenu-icon">device_hub</i>
+                                    device-hub
+                                </a>
+                            </li>
+                            <li class="app-sidebar__heading">PRO Version</li>
+                            <li>
+                                <!-- <a href = "https://dashboardpack.com/theme-details/architectui-dashboard-html-pro/" target="_blank">-->
+                                <a href="#">
+                                    <i class="material-icons metismenu-icon">cast_connected</i>
+                                    Connect
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>    
+            <div class="app-main__outer">
+                <div class="app-main__inner">
+                    <div class="app-page-title">
+                        <div class="page-title-wrapper">
+                            <div class="page-title-heading">
+                                <div class="page-title-icon">
+                                    <i class="material-icons icon-gradient bg-mean-fruit">sync_problem</i>
+                                </div>
+                                <div>Welcome Administrator
+                                    <div class="page-title-subheading">Please make sure that you keep your admin credentials safe and guided
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="page-title-actions">
+                                <button type="button" data-toggle="tooltip" title="Favourite" data-placement="bottom" class="btn-shadow mr-3 btn btn-dark">
+                                    <i class="fa fa-star"></i>
+                                </button>
+                                <div class="d-inline-block dropdown">
+                                    <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn-shadow dropdown-toggle btn btn-info">
+                                        <span class="btn-icon-wrapper pr-2 opacity-7">
+                                            <i class="fa fa-business-time fa-w-20"></i>
+                                        </span>
+                                        Details
+                                    </button>
+                                    <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
+                                        <ul class="nav flex-column">
+                                            <li class="nav-item">
+                                                <a href="javascript:void(0);" class="nav-link">
+                                                    <i class="nav-link-icon lnr-inbox"></i>
+                                                    <span>
+                                                        videos
+                                                    </span>
+                                                    <div class="ml-auto badge badge-pill badge-secondary">86</div>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="javascript:void(0);" class="nav-link">
+                                                    <i class="nav-link-icon lnr-book"></i>
+                                                    <span>
+                                                        Books
+                                                    </span>
+                                                    <div class="ml-auto badge badge-pill badge-danger">5</div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>  
+                    <div class="container containerformat" id="containerformat">
+                        {{#if users}}
+                            <div class="row" id="rowformat">
+                                {{#each users}}
+                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 formatThis" id="formatThis1">
+                                        <div class="first" id="firstOne">
+                                            <img src="data:image/jpeg;charset=utf-8;base64,{{base64ArrayBuffer this.imageFile.data.buffer}}" class="img-fluid-record" alt="">
+                                            <ul class="ulForList" id="main">
+                                                <li class="followOthers">  
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" name="form-check-input" type="checkbox" id="inlineFormCheck">
+                                                        <label class="form-check-label" for="inlineFormCheck" id="inlineFormCheck">
+                                                            add me
+                                                        </label>
+                                                        <div class="labelNotification" id="labelDiv">
+                                                            You Are Not right with what you have typed
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                </li>
+                                                <li class="ID">ID : {{this._id}}</li>
+                                                <li class="email">Email : {{this.email}}</li>
+                                                <li class="contact">Contact : {{this.contact}}</li>
+                                                <li class="proffession">proffession : {{this.proffession}}</li>
+                                                <li class="skills">skill : {{this.skills}}</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                {{/each}}
+                            </div>
+                        {{/if}}
+                        <div class="buttonmatch">
+                            <button type="button" class="btn btn-primary btn-lg btn-block" id="btb">Match Personalities</button>
+                        </div>
+                    </div>
+                    <div class="container show-matched-users" id="show-matched-users">
+                        {{#if doc}}
+                            <div class="row" id="rowformat">
+                                {{#each doc}}
+                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 formatThis" id="formatThis1">
+                                        <div class="first" id="firstOne">
+                                            <ul class="ulForList">
+                                                <li>  
+                                                    <div class="form-check">
+                                                        <h6>Group : {{this.order}}</h6>
+                                                    </div>
+                                                </li>
+                                                <li><div class="col-12">ID : {{this._id}}</div></li> 
+                                                <br>
+                                                <li><div class="col-12">Email : {{this.email}}</div></li>
+                                                <br>
+                                                <li><div class="col-12">Skills : {{this.skills}}</div></li>
+                                            </ul>
+                                        </div>
+                                        <div class="forBtnDanger">
+                                            <button data-toggle="tooltip" value="{{this._id}}" title="delete" data-placement="bottom" class="mr-2 btn-icon btn-icon-only btn btn-outline-danger" id="btn-outline-danger">
+                                                <i class="pe-7s-trash btn-icon-wrapper"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                {{/each}}
+                            </div> 
+                        {{/if}}   
+                    </div>
+                    <div class="container deleteUserWithID" id="deleteUserWithID">
+                         <form class="formForDeleteUser" id="formForDeleteUser" name="formForDeleteUser">
+                            <div class="form-group">
+                                <label for="inputAddress">Enter The ID of Matched Users</label>
+                                <input type="text" name="inputForDeleteUser" class="form-control" id="inputAddress" placeholder="Enter id of matched users">
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg btn-block" id="deleteMatchedUserButton">Delete User</button>
+                        </form>
+                    </div>
+                    <div class="container forUploadingPdf" id="forUploadingPdf">
+                        <div class="alert alert-success" role="alert" id="pdf_success_alart">
+                        </div>
+                        <form class="formPdfUpload" name="formPdfUpload" id="formPdfUpload">   
+                            <div class="form-group">
+                                <label for="inputAddress">Pdf Name</label>
+                                <input type="text" class="form-control" name="inputForPdfUpload" id="inputForPdfUpload" placeholder="Name of pdf">
+                                 <label id="pdf_Input_Label">Error Please provide the name of your pdf !!</label>
+                            </div>
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="customFile" name="inputFileForPdfUpload">
+                                <label class="custom-file-label" for="customFile">Choose File</label>
+                                <label id="file_Input_Label"></label>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg btn-block" id="pdfbuttonUpload">Upload Pdf File</button>
+                        </form> 
+                    </div>
+                    <div class="container forUploadingVideo" id="forUploadingVideo">
+                        <div class="for_form_vedio">
+                            <form class="formVideoUpload" id="form_Video_Upload" name="form_Video_Upload">
+                                <div class="form-group">
+                                    <label for="inputAddress">Video File</label>
+                                    <input type="text" name="input_For_Video_Upload" class="form-control" id="input_Address" placeholder="Name of video">
+                                    <label id="err_msg_4_vedio_address">Video File</label>
+                                </div>
+                                <div class="custom-file">
+                                    <input type="file" name="input_File_For_Video_Upload" class="custom-file-input" id="custom_File_for_vedio">
+                                    <label class="custom-file-label" for="customFile">Choose File</label>
+                                    <label id="err_msg_4_vedio_file">Video File</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-lg btn-block" id="videobuttonUpload">Upload Video File</button>
+                            </form>
+                        </div>
+                        <div class="container forUploadingVideo" id="video_image_upload">
+                            <form class="formVideoUpload" id="form_Video_image_Upload" name="form_Video_image_Upload">
+                                <div class="label_div_case">
+                                    <label class="label_case">Choose Image of the Vedio you uploaded</label>
+                                </div>
+                                <div class="custom-file">
+                                    <input type="file" name="input_File_For_Video_Imager_Upload" class="custom-file-input" id="custom_File_for_vedio_image">
+                                    <label class="custom-file-label" for="customFile">Choose Vedio Image</label>
+                                    <label id="err_msg_4_vedio_image">Video File</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-lg btn-block" id="video_button_Upload_2">Upload Video Image</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="container forOpeningPdf" id="forOpeningPdf"> 
+                        <!--<div class="row" id="load_pdf">-->
+                            {{#if pdf}}
+                                <div class="row">
+                                    {{#each pdf}}
+                                        <div class="wrap_content" id="wrap_content">
+                                            <div class="col-md-12 container_resize"> 
+                                                <a href="/pdf/{{this.fileName}}" type="application/pdf" target="_blank">
+                                                    <div class = "pdf_img_holder">
+                                                        <img src = "/uploads/{{this.title}}" id="image_resize">
+                                                    </div>
+                                                </a>
+                                                <div class="remove_document" id="remove_document">
+                                                   <!-- <div class="hide_field" id="hide_Field">{{this.title}}</div> -->
+                                                   <!-- <div class="hide_file_name" id="hide_file_name">{{this.fileName}}</div>-->
+                                                    <button data-toggle="tooltip" value="{{this._id}}" title="delete" data-placement="bottom" class="mr-2 btn-icon btn-icon-only btn btn-outline-danger " id="remove_doc">
+                                                        <i class="pe-7s-trash btn-icon-wrapper"></i>
+                                                    </button>
+                                                </div>
+                                                <div class="formater">
+                                                    <h5>{{formater this.title}}</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    {{/each}}
+                                </div>      
+                            {{/if}}
+                       <!-- </div>-->
+                    </div>
+                    <div class="container forOpeningVideo" id="for_Opening_Video">
+                        <div class="grand_holder">
+                            {{#if videos_mp4}}
+                                <div class="row" id="open_vedio">
+                                {{#each videos_mp4}}
+                                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 viddeo_vertical" id="video_parent">
+                                            <div class="get_file_name">{{this.fileName}}</div>
+                                            <div class="get_file_Image">{{this.fileImage}}</div>
+                                            <video class="vid_eo" src="/video/{{this.fileName}}" poster="/video/video_images/{{image_converter this.title}}" target="_blank" controls></video>
+                                            <button rel="tooltip" value="{{this._id}}" title="delete video" data-placement="bottom" class="mr-2 btn-icon btn-icon-only btn btn-outline-danger " id="remove_video">
+                                                <i class="pe-7s-trash btn-icon-wrapper" id="format_video_delete_icon"></i>
+                                            </button>
+                                        </div>
+                                {{/each}} 
+                                </div>
+                            {{/if}}
+                        </div>
+                    </div>
+                    <div class="data__" id="data__"></div>
+                    <div class="container forAdminSettings" id="forAdminSetting"></div>
+                </div>        
+            </div>
+        </div> 
+    </div>                     
+</div> 
+
+
+

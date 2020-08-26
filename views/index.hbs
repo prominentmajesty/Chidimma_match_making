@@ -1,0 +1,674 @@
+{{> header}}
+<section id ="showcase">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item carousel-image-1 active">
+                <div class="container">
+                    <div class="carousel-caption d-xs-block text-right mb-5 pr-5">
+                        <h2 class="display">Marrital matching</h2>
+                        <p class="lead" id="setting">In marital matching, two individuals can be be matched togather. You can also go for marital matching. We can help You through this medium to to make a right choice in  your life partner selection </p>
+                        <a href="#" id="trans" class="btn btn-outline-secondary btn-lg" data-toggle="modal" data-target="#contactModal">Register...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item carousel-image-2">
+                <div class="container">
+                    <div class="carousel-caption d-xs-block mb-5">
+                        <h2 class="display">Advertistment</h2>
+                        <p class="lead">Yaaa.... We also have a ground in event management and plannings Services Also Performs Home Delivery And Services. This Is A service That Will Be Rendered At Your Door Step.</p>
+                        <a href="#" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#contactModal">Register...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item carousel-image-3">
+                <div class="container">
+                    <div class="carousel-caption d-xs-block text-right mb-5 pr-5" id="setting">
+                        <h2 class="display" id="setting">Register For Promo</h2>
+                        <p class="lead">Check Out For our Service Promo.. Click On The Register Button To Register.You Can Be Eligible For Our Promo If Only You Are Our Registered Customer</p>
+                        <a href="#" class="btn btn-success btn-lg" data-toggle="modal" data-target="#contactModal">Register...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#myCarousel" data-slide="prev" class="carousel-control-prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a href="#myCarousel" data-slide="next" class="carousel-control-next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+</section>
+
+<div class="modal fade text-dark" id="contactModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Sign Up</h5>
+                <button class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                </button>
+            </div>
+            <div class="alert alert-warning" role="alert" id="alertID"></div>
+            <div class="modal-body">
+                <form class="form" id="formContent" name="formContent">
+                    <div class="alert alert-success text-center mb-0 pt-1 pb-1" role="alert" id="succesAlert"></div>
+                    <div class="form-group">
+                        <label for="surname" >Sur-Name</label>
+                        <input type="text" name="surname" class="form-control surname" id = "surname" data-toggle="tooltip" title="Enter Your Surname Name" data-placement="bottom">
+                    </div>
+                    <div class="form-group">
+                        <label for="firstname" >First-Name</label>
+                        <input type="text" name="firstname" class="form-control firstname" id = "firstname" data-toggle="tooltip" title="Enter Your First Name" data-placement="bottom">
+                    </div>
+                    <div class="form-group">
+                        <label for="email" >Email</label>
+                        <input type="email" name="email" class="form-control email" id = "email" data-toggle="tooltip" title="Enter Your Email e.g Odoemene@gmail.com" data-placement="bottom">
+                    </div> 
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" class="form-control" id="password" data-toggle="tooltip" title="Enter Your password: password must contain at least an upper or lower case leter, at least a number, one or more special characters and must not be less than 8" data-placement="bottom">
+                    </div>
+                    <div class="form-group">
+                        <label for="contact" >Contact</label>
+                        <input type="text" name="contact" class="form-control contact" id = "contact" data-toggle="tooltip" title="Enter Your phone Number e.g 08035420791" data-placement="bottom">
+                    </div>
+                    <div class="form-group">
+                        <label for="dateofbirth" >Dateofbirth</label>
+                        <div class="input-group input-daterange" id = "loadDatePicker">
+                            <input type="text" name="dateofbirth" class="form-control dateofbirth" placeholder="dd/mm/yyyy" id = "dateofbirth" data-toggle="tooltip" title="Enter Your Date Of Birth e.g 30/10/2020" data-placement="bottom">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact" >Proffession</label>
+                        <select class="custom-select contact" id="forProffession" name="forProffession"data-toggle="tooltip" title="Choose A Proffession" data-placement="bottom">
+                            <option value="" disabled selected>Choose Your Proffession</option>
+                            <option value="Ethical-Hacking">Ethical-Hacking</option>
+                            <option value="Programming">Web-Developement</option>
+                            <option value="Desktop-Application">Desktop-Application</option>
+                            <option value="Mobile-Application">Mobile-Application</option>
+                            <option value="Software-Engeneering">Software-Engeneering</option>
+                            <option value="Networking">NetWorking</option>
+                            <option value="Computer-Engeneering">Computer-Engeneering</option>    
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact">Skills</label>
+                        <select class="custom-select proffession" id="forSkills" name="skills" data-toggle="tooltip" title="Choose A Skill" data-placement="bottom">
+                            <option value="" disabled selected> choose your skills</option>
+                        </select>
+                    </div>
+                    <div class="custom-file">
+                        <input type="file" name="customFile" class="custom-file-input" id="customFile" data-toggle="tooltip" title="select an image file: Image File should be in the following format only'.jpg/jpeg/JPG, .png/PNG, .gif/GIF, .tiff, .webp, .bmp" data-placement="bottom">
+                        <label class="custom-file-label" for="customFile" id="customFileLabel">Choose file</label>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary btn-block" id="btgnLogin">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade text-dark" id="loginModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Login</h5>
+                <button class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form class="form" name="loginForm" id="loginForm" action="/postLoginData" method="POST">
+                    <div class="alert alert-danger" role="alert" id="loginAlert"></div>
+                    <div class="form-group">
+                        <label for="email" >Email</label>
+                        <input type="email" name="email" class="form-control email" id = "loginEmail">
+                    </div> 
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" class="form-control" id="loginPassword">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" name="loginbtn" class="btn btn-primary btn-block" id="loginbtn">Submit</button>
+                    </div>
+                </form>    
+            </div>
+        </div>
+    </div>
+</div>
+
+<section id = "AboutSection">
+    <div class="container" id ="setAccordion">
+        <div class="accordion text-center" id="accordionExample">
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Read and Know More About Us
+                    </button>
+                </h2>
+            </div>
+
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+           Hi every one, we are Ur--ch match making company. match making is the act bringing individuals togather for a particular reason which is either for marriage purpose or for collaboration purpose in a work place. we use expert system to match individual togather based on ther characteristics. our system will collect data from the individuals to be matched, analyses the data and automatically performs its matching.           
+            </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                View details on marital matching
+                </button>
+            </h2>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">
+                <h1>details of charges for marital matching</h1>
+                <div class="row getme">
+                    <div class="col-md-4 text-center">
+                        <div class="single-price" style="padding-left: ">
+                            <div class="price-head" style="padding-left:">
+                                <h2> details on individual marital matching</h2>
+                                <p>$0/<span>month</span></p>
+                            </div>
+                            <div class="price-content">
+                                <table class="launderyTable">
+                                    <thead>
+                                        <tr>
+                                            <div class="formatROW"></div><th style="padding-left: 35px;"> days</th></div>
+                                            <div class="formatROW"><th style="padding-left: 35px;"> Price</th></div>
+                                            <div class="formatROW"><th style="padding-left: 35px;"> verdict</th></div>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <div class="formatROW"><td style="padding-left: 35px;"> monday</td></div>
+                                            <div class="formatROW"><td style="padding-left: 35px;"> $0.00</td></div>
+                                            <div class="formatROW"><td style="padding-left: 35px;"> free</td></div>
+                                        </tr>
+                                        <tr>
+                                            <div class="formatROW"><td style="padding-left: 35px;"> tuesday</td></div>
+                                            <div class="formatROW"><td style="padding-left: 35px;"> $0.00</td></div>
+                                            <div class="formatROW"><td style="padding-left: 35px;"> free</td></div>
+                                        </tr>
+                                        <tr>
+                                            <div class="formatROW"><td style="padding-left: 35px;">wednesday</td></div>
+                                            <div class="formatROW"><td style="padding-left: 35px;">$0.00</td></div>
+                                            <div class="formatROW"><td style="padding-left: 35px;">free</td></div>
+                                        </tr>
+                                        <tr>
+                                            <div class="formatROW"><td style="padding-left: 35px;">thursday</td></div>
+                                            <div class="formatROW"><td style="padding-left: 35px;">$0.00</td></div>
+                                            <div class="formatROW"><td style="padding-left: 35px;">free</td></div>
+                                        </tr>
+                                        <tr>
+                                            <div class="formatROW"><td style="padding-left: 35px;">friday</td></div>
+                                            <div class="formatROW"><td style="padding-left: 35px;">$0.00</td></div>
+                                            <div class="formatROW"><td style="padding-left: 35px;">free</td></div>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="single-price" style="padding-left: ;">
+                            <div class="price-head" style="padding-left: ;">
+                                <h2> details on proffessional matching</h2>
+                                <p>$0/<span>month</span></p>
+                            </div>
+                            <div class="price-content">
+                                <table class="launderyTable">
+                                    <thead>
+                                        <tr>
+                                            <div class="formatROW"></div><th style="padding-left: 35px;"> days</th></div>
+                                            <div class="formatROW"><th style="padding-left: 35px;"> price</th></div>
+                                            <div class="formatROW"><th style="padding-left: 35px;">verdict</th></div>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <div class="formatROW"><td style="padding-left: 35px;">monday</td></div>
+                                            <div class="formatROW"><td style="padding-left: 35px;"> $0.00</td></div>
+                                            <div class="formatROW"><td style="padding-left: 35px;"> free</td></div>
+                                        </tr>
+                                        <tr>
+                                            <div class="formatROW"><td style="padding-left: 35px;"> tuesday</td></div>
+                                            <div class="formatROW"><td style="padding-left: 35px;"> $0.00</td></div>
+                                            <div class="formatROW"><td style="padding-left: 35px;"> free</td></div>
+                                        </tr>
+                                        <tr>
+                                            <div class="formatROW"><td style="padding-left: 35px;">wednesday</td></div>
+                                            <div class="formatROW"><td style="padding-left: 35px;">$0.00</td></div>
+                                            <div class="formatROW"><td style="padding-left: 35px;">free</td></div>
+                                        </tr>
+                                        <tr>
+                                            <div class="formatROW"><td style="padding-left: 35px;">thursday</td></div>
+                                            <div class="formatROW"><td style="padding-left: 35px;">$0.00</td></div>
+                                            <div class="formatROW"><td style="padding-left: 35px;">free</td></div>
+                                        </tr>
+                                        <tr>
+                                            <div class="formatROW"><td style="padding-left: 35px;">friday</td></div>
+                                            <div class="formatROW"><td style="padding-left: 35px;">$0.00</td></div>
+                                            <div class="formatROW"><td style="padding-left: 35px;">free</td></div>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center ">
+                        <div class="single-price" style="padding-left:;">
+                            <div class="price-head" style="padding-left:;">
+                                <h2> details on collaborative matching</h2>
+                                <p>$0/<span>month</span></p>
+                            </div>
+                            <div class="price-content">
+                                <table class="launderyTable">
+                                    <thead>
+                                        <tr>
+                                            <div class="formatROW"></div><th style="padding-left: 35px;"> days</th></div>
+                                            <div class="formatROW"><th style="padding-left: 35px;"> Price</th></div>
+                                            <div class="formatROW"><th style="padding-left: 35px;"> verdict</th></div>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <div class="formatROW"><td style="padding-left: 35px;"> monday</td></div>
+                                            <div class="formatROW"><td style="padding-left: 35px;"> $0.00</td></div>
+                                            <div class="formatROW"><td style="padding-left: 35px;"> free</td></div>
+                                        </tr>
+                                        <tr>
+                                            <div class="formatROW"><td style="padding-left: 35px;"> tuesday</td></div>
+                                            <div class="formatROW"><td style="padding-left: 35px;"> $0.00</td></div>
+                                            <div class="formatROW"><td style="padding-left: 35px;"> free</td></div>
+                                        </tr>
+                                        <tr>
+                                            <div class="formatROW"><td style="padding-left: 35px;">wednesday</td></div>
+                                            <div class="formatROW"><td style="padding-left: 35px;">$0.00</td></div>
+                                            <div class="formatROW"><td style="padding-left: 35px;">free</td></div>
+                                        </tr>
+                                        <tr>
+                                            <div class="formatROW"><td style="padding-left: 35px;">thursday</td></div>
+                                            <div class="formatROW"><td style="padding-left: 35px;">$0.00</td></div>
+                                            <div class="formatROW"><td style="padding-left: 35px;">free</td></div>
+                                        </tr>
+                                        <tr>
+                                            <div class="formatROW"><td style="padding-left: 35px;">friday</td></div>
+                                            <div class="formatROW"><td style="padding-left: 35px;">$0.00</td></div>
+                                            <div class="formatROW"><td style="padding-left: 35px;">free</td></div>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    detail on proffessional matching
+                </button>
+            </h2>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+               
+            <h1> view on proffessional matching</h1>
+                <div class="row getme">
+                    <div class="col-md-4 text-center">
+                        <div class="single-price" style="padding-left: ">
+                            <div class="price-head" style="padding-left:">
+                                <h2>view on proffessional matching</h2>
+                                <p>$0/<span>month</span></p>
+                            </div>
+                            <div class="price-content">
+                                <table class="launderyTable">
+                                    <thead>
+                                        <tr>
+                                            <div class="formatROW"></div><th style="padding-left: 35px;"> days</th></div>
+                                            <div class="formatROW"><th style="padding-left: 35px;"> Price</th></div>
+                                            <div class="formatROW"><th style="padding-left: 35px;"> verdict</th></div>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <div class="formatROW"><td style="padding-left: 35px;"> monday</td></div>
+                                            <div class="formatROW"><td style="padding-left: 35px;"> $0.00</td></div>
+                                            <div class="formatROW"><td style="padding-left: 35px;"> free</td></div>
+                                        </tr>
+                                        <tr>
+                                            <div class="formatROW"><td style="padding-left: 35px;"> tuesday</td></div>
+                                            <div class="formatROW"><td style="padding-left: 35px;"> $0.00</td></div>
+                                            <div class="formatROW"><td style="padding-left: 35px;"> free</td></div>
+                                        </tr>
+                                        <tr>
+                                            <div class="formatROW"><td style="padding-left: 35px;">wednesday</td></div>
+                                            <div class="formatROW"><td style="padding-left: 35px;">$0.00</td></div>
+                                            <div class="formatROW"><td style="padding-left: 35px;">free</td></div>
+                                        </tr>
+                                        <tr>
+                                            <div class="formatROW"><td style="padding-left: 35px;">thursday</td></div>
+                                            <div class="formatROW"><td style="padding-left: 35px;">$0.00</td></div>
+                                            <div class="formatROW"><td style="padding-left: 35px;">free</td></div>
+                                        </tr>
+                                        <tr>
+                                            <div class="formatROW"><td style="padding-left: 35px;">friday</td></div>
+                                            <div class="formatROW"><td style="padding-left: 35px;">$0.00</td></div>
+                                            <div class="formatROW"><td style="padding-left: 35px;">free</td></div>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="single-price" style="padding-left: ;">
+                            <div class="price-head" style="padding-left: ;">
+                                <h2>view on individual matching</h2>
+                                <p>$0/<span>month</span></p>
+                            </div>
+                            <div class="price-content">
+                                <table class="launderyTable">
+                                    <thead>
+                                        <tr>
+                                            <div class="formatROW"></div><th style="padding-left: 35px;"> days</th></div>
+                                            <div class="formatROW"><th style="padding-left: 35px;"> Price</th></div>
+                                            <div class="formatROW"><th style="padding-left: 35px;">verdict</th></div>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <div class="formatROW"><td style="padding-left: 35px;">monday</td></div>
+                                            <div class="formatROW"><td style="padding-left: 35px;"> $0.00</td></div>
+                                            <div class="formatROW"><td style="padding-left: 35px;"> verdict</td></div>
+                                        </tr>
+                                        <tr>
+                                            <div class="formatROW"><td style="padding-left: 35px;"> tuesday</td></div>
+                                            <div class="formatROW"><td style="padding-left: 35px;"> $0.00</td></div>
+                                            <div class="formatROW"><td style="padding-left: 35px;"> free</td></div>
+                                        </tr>
+                                        <tr>
+                                            <div class="formatROW"><td style="padding-left: 35px;">wednesday</td></div>
+                                            <div class="formatROW"><td style="padding-left: 35px;">$0.00</td></div>
+                                            <div class="formatROW"><td style="padding-left: 35px;">free</td></div>
+                                        </tr>
+                                        <tr>
+                                            <div class="formatROW"><td style="padding-left: 35px;">thursday</td></div>
+                                            <div class="formatROW"><td style="padding-left: 35px;">$0.00</td></div>
+                                            <div class="formatROW"><td style="padding-left: 35px;">free</td></div>
+                                        </tr>
+                                        <tr>
+                                            <div class="formatROW"><td style="padding-left: 35px;">friday</td></div>
+                                            <div class="formatROW"><td style="padding-left: 35px;">$0.00</td></div>
+                                            <div class="formatROW"><td style="padding-left: 35px;">verdict</td></div>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="single-price" style="padding-left:;">
+                            <div class="price-head" style="padding-left:;">
+                                <h2>matching for individual coolaboration</h2>
+                                <p>$0/<span>month</span></p>
+                            </div>
+                            <div class="price-content">
+                                <table class="launderyTable">
+                                    <thead>
+                                        <tr>
+                                            <div class="formatROW"></div><th style="padding-left: 35px;"> days</th></div>
+                                            <div class="formatROW"><th style="padding-left: 35px;"> Price</th></div>
+                                            <div class="formatROW"><th style="padding-left: 35px;"> verdict</th></div>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <div class="formatROW"><td style="padding-left: 35px;"> monday</td></div>
+                                            <div class="formatROW"><td style="padding-left: 35px;"> $price</td></div>
+                                            <div class="formatROW"><td style="padding-left: 35px;"> verdict</td></div>
+                                        </tr>
+                                        <tr>
+                                            <div class="formatROW"><td style="padding-left: 35px;"> tuesday</td></div>
+                                            <div class="formatROW"><td style="padding-left: 35px;"> $0.00</td></div>
+                                            <div class="formatROW"><td style="padding-left: 35px;">free</td></div>
+                                        </tr>
+                                        <tr>
+                                            <div class="formatROW"><td style="padding-left: 35px;">wednesday</td></div>
+                                            <div class="formatROW"><td style="padding-left: 35px;">$0.00</td></div>
+                                            <div class="formatROW"><td style="padding-left: 35px;">free</td></div>
+                                        </tr>
+                                        <tr>
+                                            <div class="formatROW"><td style="padding-left: 35px;">thursday</td></div>
+                                            <div class="formatROW"><td style="padding-left: 35px;">$0.00</td></div>
+                                            <div class="formatROW"><td style="padding-left: 35px;">free</td></div>
+                                        </tr>
+                                        <tr>
+                                            <div class="formatROW"><td style="padding-left: 35px;">friday</td></div>
+                                            <div class="formatROW"><td style="padding-left: 35px;">$0.00</td></div>
+                                            <div class="formatROW"><td style="padding-left: 35px;">free</td></div>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+<section id="authors" class="my-5 text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="info-header mb-5">
+                    <h1 class="text-primary pb-3">
+                        Meet The Management
+                    </h1>
+                    <p class="lead">
+                        Hi every one, we are Ur--ch match making company. match making is the act bringing individuals togather for a particular reason which is either for marriage purpose or for collaboration purpose in a work place. we use expert system to match individual togather based on ther characteristics. our system will collect data from the individuals to be matched, analyses the data and automatically performs its matching. 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row"> 
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <div class="card" id="de-card">
+                    <div class="card-body">
+                        <img src="/images/Snap.jpg" alt="" class="img-fluid mb-3">
+                        <h3>martins ogusbark</h3>
+                        <h5 class="text-muted">CEO/Director</h5>
+                        <p>martins ogusbark Is a Bussiness mongoo In Umuahia Abia State. martins ogusbark is the co-founder of Ur--ch match making system.</p>
+                        <div class="d-flex justify-content-center">
+                            <div class="p-4">
+                                <a href="http://facebook.com">
+                                <i class="fab fa-facebook"></i></a>
+                            </div>
+                            <div class="p-4">
+                                <a href="http://twitter.com">
+                                <i class="fab fa-twitter"></i></a>
+                            </div>
+                            <div class="p-4">
+                                <a href="http://instagram.com">
+                                <i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4" id="setPadding">
+                <div class="card" id="de-card">
+                    <div class="card-body">
+                        <img src="/images/Snap.jpg" alt="" class="img-fluid mb-3">
+                        <h3>martins ogusbark</h3>
+                        <h5 class="text-muted">CEO/Director</h5>
+                        <p>martins ogusbark Is a Bussiness mongoo In Umuahia Abia State. martins ogusbark is the co-founder of Ur--ch match making system.</p>
+                        <div class="d-flex justify-content-center">
+                            <div class="p-4">
+                                <a href="http://facebook.com">
+                                <i class="fab fa-facebook"></i></a>
+                            </div>
+                            <div class="p-4">
+                                <a href="http://twitter.com">
+                                <i class="fab fa-twitter"></i></a>
+                            </div>
+                            <div class="p-4">
+                                <a href="http://instagram.com">
+                                <i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4" id="setPadding">
+                <div class="card" id="de-card">
+                    <div class="card-body">
+                        <img src="/images/Snap.jpg" alt="" class="img-fluid mb-3">
+                        <h3>martins ogusbark</h3>
+                        <h5 class="text-muted">CEO/Director</h5>
+                        <p>martins ogusbark Is a Bussiness mongoo In Umuahia Abia State. martins ogusbark is the co-founder of Ur--ch match making system.</p>
+                        <div class="d-flex justify-content-center">
+                            <div class="p-4">
+                                <a href="http://facebook.com">
+                                <i class="fab fa-facebook"></i></a>
+                            </div>
+                            <div class="p-4">
+                                <a href="http://twitter.com">
+                                <i class="fab fa-twitter"></i></a>
+                            </div>
+                            <div class="p-4">
+                                <a href="http://instagram.com">
+                                <i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="testimonials" class="p-4 text-white">
+    <div class="container">
+      <h2 class="text-center">testimonials</h2>
+      <div class="row text-center">
+        <div class="col">
+          <div class="slider">
+            <div>
+              <blockquote class="blockquote">
+                <p class="mb-0">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, quaerat.
+                </p>
+                <footer class="blockquote-footer">John Doe From
+                  <cite title="Company 1">Company 1</cite>
+                </footer>
+              </blockquote>
+            </div>
+            <div>
+              <blockquote class="blockquote">
+                <p class="mb-0">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, quaerat.
+                </p>
+                <footer class="blockquote-footer">Sam Smith From
+                  <cite title="Company 2">Company 2</cite>
+                </footer>
+              </blockquote>
+            </div>
+            <div>
+              <blockquote class="blockquote">
+                <p class="mb-0">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, quaerat.
+                </p>
+                <footer class="blockquote-footer">Meghan Williams From
+                  <cite title="Company 3">Company 3</cite>
+                </footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <section id ="getIntouchSection">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-9 " id ="formartBorder">
+                  <h3>Get In Touch</h3>
+                  <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, quaerat.</p>
+                  <form>
+                      <div class="input-group input-group-lg mb-3">
+                          <div class="input-group-prepend">
+                              <span class="input-group-text">
+                                  <i class="fas fa-user"></i>
+                              </span>
+                          </div>
+                          <input type="text" class="form-control" placeholder="name">
+                      </div>
+                      <div class="input-group input-group-lg mb-3">
+                          <div class="input-group-prepend">
+                              <span class="input-group-text">
+                                  <i class="fas fa-envelope"></i>
+                              </span>
+                          </div>
+                          <input type="text" class="form-control" placeholder="email">
+                      </div>
+                      <div class="input-group input-group-lg mb-3">
+                          <div class="input-group-prepend">
+                              <span class="input-group-text">
+                                  <i class="fas fa-pencil-alt"></i>
+                              </span>
+                          </div>
+                          <textarea class="form-control" placeholder="Message" rows="2"></textarea>
+                      </div>
+                      <input id="formatButton" type="submit" value="submit" class="btn btn-primary btn-block btn-lg">
+                  </form>
+              </div>
+          </div>
+      </div>
+    </section>
+    <section id="video-play">
+        <div class="dark-overlay">
+            <div class="row">
+                <div class="col">
+                    <div class="container p-5">
+                        <a href="#" class="video" data-video="https://www.youtube.com/embed/T30wHkREgu4"
+                        data-toggle="modal" data-target="#videoModal">
+                            <i class="fas fa-play fa-3x"></i>
+                        </a> 
+                        <h1>See What We Do</h1> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- VIDEO MODEL-->
+    <div class="modal fade" id="videoModal">
+         <div class="modal-dialog">
+             <div class="modal-content">
+                 <div class="modal-body">
+                     <button class="close" data-dismiss="modal">
+                         <span>&times;</span>
+                     </button>
+                     <iframe src="" frameborder="0" height="350"width="100%" allowfullscreen></iframe>
+                 </div>
+             </div>
+         </div>
+    </div>
+{{> footer}}

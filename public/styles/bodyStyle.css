@@ -1,0 +1,135 @@
+*{
+    margin:0px;
+    padding:0px;
+
+}
+.navbar-brand-div{
+    margin-left: 144px;  
+}
+.navbar-brand-div a{
+    font-family: 'Abel', sans-serif;
+}
+.navbar-brand .fab{
+    font-size: 38px;
+    color: #fff;
+    padding-right: 3px;
+}
+ .navbar-nav{
+     padding-right : 97px 
+ }
+ #hov .nav-item :hover{
+     cursor : pointer;
+ }
+ .navbar-nav .liDiv{
+     margin-right: 20px;
+ }
+.collapse .liDiv .fas{
+    font-size: 22px;
+}
+ .collapse .liDiv .fab{
+    font-size: 22px;
+}
+.collapse .liDiv .fontAwsome{
+    padding-right : 10px 
+}
+.liDiv .nav-item a{
+    font-family: 'Abel', sans-serif;
+    font-size: 19px;
+}
+.liDiv .nav-item a:hover{
+    color:burlywood !important
+}
+.liDiv .nav-item .dropdown-menu{
+    background-color: rgb(48, 48, 121); /*#728C00;*/
+    border :none;
+}
+.liDiv .nav-item .dropdown-menu a{
+    background-color:rgb(48, 48, 121);/*#728C00;*/
+    color: #fff;
+}
+/*Media Queries*/
+@media (max-width: 575.98px) { 
+    .navbar-brand-div{
+        margin-left: 13px;
+    }
+    .liDiv .nav-item a{
+        font-size: 15px;
+    }
+    .navbar-nav{
+        margin-left:5px
+    }
+ }
+ @media (max-width: 767.98px) { 
+    .navbar-brand-div{
+        margin-left: 13px;
+    }
+    .liDiv .nav-item a{
+        font-size: 15px;
+    }
+ }
+ @media (max-width: 991.98px) { 
+    .navbar-brand-div{
+        margin-left: 13px;
+    }
+    .liDiv .nav-item a{
+        font-size: 15px;
+    }
+ }
+ #footer{
+     padding-top:30px;
+     background: teal;
+     color: #fff;
+ }
+ @media (max-width: 575.98px) { 
+    #formaforma{
+        text-align : center;
+    }
+}
+@media (max-width: 767.98px) { 
+    #footer{
+        text-align : center;
+    }
+}
+@media (max-width: 575.98px) { 
+    #footer{
+        text-align : center;
+    }
+}
+#formatheader{
+    font-size: 23px;
+    text-decoration: underline;
+    color:burlywood;
+}
+.address{
+    margin-top:5px;
+}
+.address b{
+    color: burlywood
+}
+.address .fa{
+    margin-left:12px;
+    margin-right : 12px
+}
+.address .fab{
+    margin-left:12px;
+    margin-right : 12px;
+    color: rosybrown;
+    font-size: 18px !important;
+}
+.address .fab:hover{
+    color:burlywood !important;
+}
+.missionbody{
+    color:rgb(255, 221, 176)
+}
+.container hr{
+    color: rosybrown
+}
+.buttomfooter{
+    background-color:rgb(4, 124, 124);
+    padding-top : 15px;
+    color:  rosybrown;
+}
+#succesAlert{
+    font-size: 21px;
+}

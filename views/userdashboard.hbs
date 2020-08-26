@@ -1,0 +1,233 @@
+{{> header}}
+<div class="row mainContainer">
+    <div class="col-3 format" id="forLeft">
+        <div class="forLeftContent">
+           <!-- <i class="fas fa-user-circle"style="color: black" id="conainer-user-circle"></i>-->
+           {{#if image}}
+           <img src="data:image/jpeg;charset=utf-8;base64,{{base64ArrayBuffer image.data.buffer}}"id="conainer-user-circle">
+            {{/if}}
+            {{#if user}}
+                <!--<img src="/images/img4.jpg" id="conainer-user-circle" alt="...">-->
+                {{#each user}}
+                    <div class="col-2 myh4">
+                        <div class="data">
+                            <h4 class="User-Icon-Label">{{this.surName}}</h4>
+                        </div>
+                    </div>
+                {{/each}}
+            {{/if}}
+            <div class="row rowForDashboard">
+                <div class="col-2">
+                    <i class="fas fa-th" style="font-size: 25px;"></i>
+                </div>
+                <div class="col-3">
+                    <h6 class="formatLabel"  style="margin-left: 11px; margin-top:4px" id="dashboardLabel">dashboard</h6>
+                </div>
+            </div>
+            <div class="row rowForDashboard">
+                <div class="col-2">
+                    <i class="fas fa-user-plus" style="font-size: 25px;"></i>
+                </div>
+                <div class="col-3">
+                    <h6 class="formatLabel" style="margin-left: 11px; margin-top:4px" id="userLabel">Users</h6>
+                </div>
+            </div>
+            <div class="row rowForDashboard">
+                <div class="col-2">
+                    <i class="fas fa-male" style="font-size: 25px;"></i>
+                </div>
+                <div class="col-3">
+                    <h6 class="formatLabel" style="margin-left: 11px; margin-top:4px" id="profileLabel">Profile</h6>
+                </div>
+
+            </div>
+            <div class="row rowForDashboard">
+                <div class="col-2">
+                    <i class="fas fa-file-pdf"style="font-size: 25px;"></i>
+                </div>
+                <div class="col-3">
+                    <h6 class="formatLabel" style="margin-left: 11px; margin-top:4px" id="pdfLabel">pdf</h6>
+                </div>
+            </div>
+            <div class="row rowForDashboard">
+                <div class="col-2">
+                    <i class="fas fa-file-video"style="font-size: 25px;"></i>
+                </div>
+                <div class="col-3">
+                    <h6 class="formatLabel" style="margin-left: 11px; margin-top:4px" id="videoLabel">video</h6>
+                </div>
+            </div>
+
+            <a href = "/userdashboard/logout"><div class="row rowForDashboard">
+                <div class="col-2">
+                    <i class="fas fa-sign-out-alt"style="font-size: 25px;"></i>
+                </div>
+                <div class="col-3"> 
+                   <h6 class="formatLabel" style="margin-left: 11px; margin-top:4px" id="logoutLabel">Logout</h6>
+                </div>
+            </div></a>
+            <div class="row rowForDashboard">
+                <div class="col-2">
+                    <i class="fas fa-cogs"style="font-size: 25px;"></i>
+                </div>
+                <div class="col-3">
+                    <h6 class="formatLabel" style="margin-left: 11px; margin-top:4px" id="settingLabel">Settings</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-9" id = "forRight">
+        <div class="forRightContent">
+            <div class="container" id="ForPhoto">
+                <h1 class="text-center">Photo Gallery</h1>
+                <p class="text-center">Check Out our Photos</p>
+                <div class="row mb-4">
+                    <div class="col-md-4">
+                        <a href="/images/img1.jpg" data-toggle="lightbox" data-gallery="img-gallery" data-height="560" data-width="560">
+                        <img src="/images/img1.jpg"alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="/images/img3.jpg" data-toggle="lightbox" data-gallery="img-gallery" data-height="560" data-width="560">
+                        <img src="/images/img3.jpg"alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="/images/img4.jpg" data-toggle="lightbox" data-gallery="img-gallery" data-height="560" data-width="560">
+                        <img src="/images/img4.jpg"alt="" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col-md-4">
+                        <a href="/images/img6.jpg" data-toggle="lightbox" data-gallery="img-gallery" data-height="560" data-width="560">
+                        <img src="/images/img6.jpg"alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="/images/img7.jpg" data-toggle="lightbox" data-gallery="img-gallery" data-height="560" data-width="560">
+                        <img src="/images/img7.jpg"alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="/images/img8.jpg" data-toggle="lightbox" data-gallery="img-gallery" data-height="560" data-width="560">
+                        <img src="/images/img8.jpg"alt="" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col-md-4">
+                        <a href="/images/img2.jpg" data-toggle="lightbox" data-gallery="img-gallery" data-height="560" data-width="560">
+                        <img src="/images/img2.jpg"alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="/images/img1.jpg" data-toggle="lightbox" data-gallery="img-gallery" data-height="560" data-width="560">
+                        <img src="/images/img1.jpg"alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="/images/img5.jpg" data-toggle="lightbox" data-gallery="img-gallery" data-height="560" data-width="560">
+                        <img src="/images/img5.jpg"alt="" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col-md-4">
+                        <a href="/images/img4.jpg" data-toggle="lightbox" data-gallery="img-gallery" data-height="560" data-width="560">
+                        <img src="/images/img4.jpg"alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="/images/img6.jpg" data-toggle="lightbox" data-gallery="img-gallery" data-height="560" data-width="560">
+                        <img src="/images/img6.jpg"alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="/images/img8.jpg" data-toggle="lightbox" data-gallery="img-gallery" data-height="560" data-width="560">
+                        <img src="/images/img8.jpg"alt="" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="users">
+        <div class="row" id="rowformat">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 formatThis" id="formatThis1">
+                {{#if doc}}
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                            <th scope="col">index</th>
+                            <th scope="col">Personal ID</th>
+                            <th scope="col">personal email</th>
+                            <th scope="col">personal skills</th>
+                            <th scope="col">personal contact</th>
+                            <th scope="col">proffession</th>
+                            </tr>
+                        </thead>
+                        {{#each doc}}
+                            <tbody>
+                                <tr>
+                                <th class="tableIndex" scope="row">{{this.order}}</th>
+                                <td>{{this.ID}}</td>
+                                <td>{{this.email}}</td>
+                                <td>{{this.skills}}</td>
+                                <td>{{this.contact}}</td>
+                                <td>{{this.proffession}}</td>
+                                </tr>
+                            </tbody>
+                        {{/each}}
+                    </table>
+                {{/if}}
+            </div>
+        </div>
+    </div>
+    
+    <div class="container forOpeningPdf" id="forOpeningPdf"> 
+        <div class="pdf">
+            <!--<div class="row" id="load_pdf">-->
+                {{#if pdf}}
+                    <div class="row reduce">
+                        {{#each pdf}}
+                            <div class="wrap_content" id="wrap_content">
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 container_resize"> 
+                                    <a href="/pdf/{{this.fileName}}" type="application/pdf" target="_blank">
+                                        <div class = "pdf_img_holder">
+                                            <img src = "/uploads/{{this.title}}" id="image_resize">
+                                        </div>
+                                    </a>
+                                    <div class="remove_document" id="remove_document">
+                                        <!-- <div class="hide_field" id="hide_Field">{{this.title}}</div> -->
+                                        <!-- <div class="hide_file_name" id="hide_file_name">{{this.fileName}}</div>-->
+                                    </div>
+                                    <div class="formater">
+                                        <h5>{{formater this.title}}</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        {{/each}}
+                    </div>      
+                {{/if}}
+            <!-- </div>-->
+        </div>
+    </div>
+
+    <div class="container forOpeningVideo" id="for_Opening_Video" style="padding-right : 75px ">
+        <div class="grand_holder">
+            {{#if videos_mp4}}
+                <div class="row" id="open_vedio">
+                {{#each videos_mp4}}
+                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 viddeo_vertical" id="video_parent">
+                            <div class="get_file_name">{{this.fileName}}</div>
+                            <div class="get_file_Image">{{this.fileImage}}</div>
+                            <video class="vid_eo" src="/video/{{this.fileName}}" poster="/video/video_images/{{image_converter this.title}}" target="_blank" controls></video>
+                        </div>
+                {{/each}} 
+                </div>
+            {{/if}}
+        </div>
+    </div>
+
+</div>

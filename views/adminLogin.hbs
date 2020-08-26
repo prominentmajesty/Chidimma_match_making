@@ -1,0 +1,36 @@
+<div class="login_parent">
+    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-6 col-xl-6 content">
+         <h2 class="label_caption">Log in to your account</h2>
+        <form id="log_in" name="log_in" method = "POST" action="/admin/login">  
+            {{#if failure_msg}}
+                <div class="alert alert-danger text-center mb-0" role="alert">{{failure_msg}}</div>
+            {{/if}}
+            <div class="form-group">
+                <label for="email"class="label__">Admin Email*</label>
+                <input type="email" class="form-control" name="email" id="email">
+            </div>
+            <div class="form-group">
+                <label for="password"class="label__">Admin Password*</label>
+                <input type="password" name="password" class="form-control" id="password">
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg btn-block">Login</button>
+        </form>
+        <div class="row demacations">
+            <div class=" orizontal_content">
+                <div class="adjust1"></div>
+            </div>
+            <h6 class="OR">OR</h6>
+            <div class="horizontal_content">
+                <div class="adjust1"></div>
+            </div>
+        </div>
+        <div class="row row_me">
+            <div class="col-9 hod_small">
+                <small><h6 class="h__">Don't have an account ?</h6></small>
+            </div>
+            <a href="/admin/adminSignUp"><div class="sign_uP">
+                <h5 class="h__">Sign Up</h5>
+            </div>
+        </div>
+    </div>
+</div>

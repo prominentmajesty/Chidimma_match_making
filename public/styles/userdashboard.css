@@ -1,0 +1,233 @@
+.forLeftContent{
+    position : fixed;
+    height: 100%;
+   /* z-index: 1000;
+  overflow-y: scroll auto;*/
+
+}
+
+.mainContainer{
+    background-color: whitesmoke;
+}
+.forRightContent{
+    background-color: whitesmoke;  
+    height: 100%;
+    border-left: 1px solid rgb(224, 221, 221);
+}
+.rowForDashboard:hover{
+    cursor: pointer;
+    color: rgb(139, 135, 135);
+}
+@media (max-width: 575.98px) { 
+    .forLeftContent{
+        margin-right: 87.4%;
+    }
+    .rowForDashboard{
+        padding-left:12px;
+        padding-top: 23px;
+        color : rgb(71, 69, 69)
+    }
+    #users{
+        margin-left: 23%;
+    }
+    #forOpeningPdf{
+        margin-left: 16.3%;
+    }
+    .pdf{
+        margin-top: 25%;
+        margin-left: 66px;
+        margin-right: 30px;
+        margin-bottom: 7%;
+    }
+   
+    #conainer-user-circle{
+        border-radius: 50%;
+        height: 40px;
+        width :40px;
+        margin-top : 60px;
+        margin-left : 50px
+    }
+    .myh4{
+        color : rgb(71, 69, 69);
+        margin-left: -2px;
+    }
+    .logoutholder{
+        padding-left: 100px;
+    }
+    .img-fluid-record{
+        height : 70px;
+        width : 70px;
+        border-radius: 15%;
+    }
+    .forRightContent{
+        margin-left:15%;
+    }
+    #rowformat{
+        margin-top: 25%;
+        margin-left: 66px;
+        margin-right: 30px;
+        margin-bottom: 7%;
+        height: 45%;
+        position: absolute;
+        overflow-y: scroll;
+        border-left: 1px solid rgb(163, 159, 159);
+    }
+}
+@media (max-width: 768px) { 
+    .forLeftContent{
+        margin-right: 87.4%;
+    }
+    .forRightContent{
+        margin-left:15% ;
+    }
+    .rowForDashboard{
+        padding-left:12px;
+        padding-top: 23px;
+        color : rgb(71, 69, 69)
+    }
+    #conainer-user-circle{
+        border-radius: 50%;
+        height: 47px;
+        width :47px;
+        margin-top : 60px;
+        margin-left : 50px
+    }
+    .myh4{
+        color : rgb(71, 69, 69);
+        margin-left: -2px;
+    }
+    .img-fluid-record{
+        height : 70px;
+        width : 70px;
+        border-radius: 15%;
+    }
+    #users{
+        margin-left: 23%;
+    }
+    #forOpeningPdf{
+        margin-left: 16.3%;
+    }
+    .pdf{
+        margin-top: 25%;
+        margin-left: 66px;
+        margin-right: 10px;
+        margin-bottom: 7%;
+    }
+    #rowformat{
+        margin-top: 25%;
+        margin-left: 66px;
+        margin-right: 10px;
+        margin-bottom: 7%;
+        height: 45%;
+        position: absolute;
+        overflow-y: scroll;
+        border-left: 1px solid rgb(163, 159, 159);
+    }
+}
+@media (min-width: 768px) { 
+    .forLeftContent{
+        margin-right: 87.4%;
+    }
+    .forRightContent{
+        margin-left:-13% ;
+    }
+    .rowForDashboard{
+        padding-left:27px;
+        padding-top: 23px;
+        color : rgb(71, 69, 69)
+    }
+    #conainer-user-circle{
+        border-radius: 50%;
+        height: 60px;
+        width :60px;
+        margin-top : 60px;
+        margin-left : 60px
+    }
+    .myh4{
+        color : rgb(71, 69, 69);
+        padding-left: 37px;
+    }
+    .img-fluid-record{
+        height : 100px;
+        width : 100px;
+        border-radius: 15%;
+    }
+    #users{
+        margin-left: 23%;
+    }
+    #forOpeningPdf{
+        margin-left: 16.3%;
+    }
+    .pdf{
+        margin-top: 9%;
+        margin-left: 7px;
+        margin-right: 3px;
+        margin-bottom: 7%;
+    }
+    #rowformat{
+        margin-top: 9%;
+        margin-left: -7%;
+        padding-left: 3%;
+        margin-right: 10px;
+        margin-bottom: 7%;
+        height: 65%;
+        position: absolute;
+        overflow-y: scroll;
+        border-left: 1px solid rgb(216, 207, 207);
+    }
+}
+.ulForList{
+    margin-top: 12px;
+}
+.ulForList li{
+    list-style: none;
+    display: inline-block;
+}
+
+#matchButton{
+    margin-left: 10px;
+    margin-right: 20px;
+    position: relative;
+}
+.divForToken{
+    display : none;
+}
+.reduce{
+    width: 100px !important;
+    height: 100px !important;
+}
+
+/*@media(min-width: 991.98px) { 
+    .forLeftContent{
+        margin-right: 87.4%;
+    }
+    .forRightContent{
+        margin-left:-10% ;
+    }
+    #conainer-user-circle{
+        margin-left: 46%;
+        margin-top : 80%;
+        font-size:51px;
+    }
+    .myh4{
+        color : wheat;
+        padding-left: 43px;
+    }
+}
+@media (min-width: 1200px) {
+    .forLeftContent{
+        margin-right: 87.4%;
+    }
+    .forRightContent{
+        margin-left:-13% ;
+    }
+    #conainer-user-circle{
+        margin-left: 46%;
+        margin-top : 80%;
+        font-size:52px;
+    }
+    .myh4{
+        color : wheat;
+        padding-left: 43px;
+    }
+}*/
