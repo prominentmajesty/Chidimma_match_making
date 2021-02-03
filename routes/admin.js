@@ -12,6 +12,7 @@ var multer2 = require('multer');
 var multer = require('multer');
 var  bcrypt = require('bcrypt');
 var fs = require('fs');
+const { get } = require('lodash');
 /*
  fs.unlink(path.join("public/pdf/" + doc.fileName), (err)=>{
             if(err){

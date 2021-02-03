@@ -41,7 +41,7 @@ $('.slider').slick({
    var customFileLabel = document.getElementById("customFileLabel");
    const signupForm = document.formContent;
    var regexForEmail = /^([a-z\d]{2,})@([a-z]{2,7})\.([a-z]{2,3})(\.[a-z]{2,3})?/;
-   var regexForPassword = /^(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[!@#$%^&*])[A-Za-z\d@$!%*#?&]{8,}$/;
+   var regexForPassword = /^(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[!@#$%^&*])[A-Za-z\d@$!%*#?&]{8,}$/; 
    var regexForContact = /^[\d]{9,11}$/;
    var regexForDate = /^\d{1,2}\/\d{1,2}\/\d{4}$/;
    var regexForImage = /^([a-zA-Z\d\_-]{1,})\.(gif|GIF|jpe?g|JPG?G|tiff|TIFF|png|PNG|webp|bmp)$/;

@@ -321,7 +321,7 @@ $(document).ready(function(){
             alert('Not more or less than three persons can be matched !!');
             
         }else{
-          
+        
            var getID = matched[0].ID + ", " + matched[10].ID + ", " + matched[20].ID;
            var getEmail = matched[0].email + ", " + matched[10].email + ", " + matched[20].email;
            var getSkills = matched[0].skills + ", " + matched[10].skills + ", " + matched[20].skills;
@@ -447,6 +447,7 @@ $(document).ready(function(){
             console.log(jqXHR.responseJSON.msg);
         }).fail(function(msg, status, jqXHR){
             console.log(jqXHR.responseJSON.msg);
+            console.log('get')
         });
         $(this).parent().remove();
     });

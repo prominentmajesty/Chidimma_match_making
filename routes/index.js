@@ -77,7 +77,6 @@ router.post('/postData', upload.single('customFile'), (req, res)=>{
                             users.save().then((user)=>{
                                 fs.unlink(file.path, (err)=>{
                                     if(err) {
-                                    
                                         throw err
                                     }
                                 });
